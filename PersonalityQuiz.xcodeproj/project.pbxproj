@@ -15,6 +15,8 @@
 		B581DCC724E319BB00CDC0FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B581DCC524E319BB00CDC0FF /* LaunchScreen.storyboard */; };
 		B581DCCF24E31F2A00CDC0FF /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B581DCCE24E31F2A00CDC0FF /* QuestionViewController.swift */; };
 		B581DCD124E31F4000CDC0FF /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B581DCD024E31F4000CDC0FF /* ResultsViewController.swift */; };
+		B581DCD324E327D200CDC0FF /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = B581DCD224E327D200CDC0FF /* Question.swift */; };
+		B581DCD524E3297600CDC0FF /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B581DCD424E3297600CDC0FF /* Answer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		B581DCC824E319BB00CDC0FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B581DCCE24E31F2A00CDC0FF /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		B581DCD024E31F4000CDC0FF /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		B581DCD224E327D200CDC0FF /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		B581DCD424E3297600CDC0FF /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,8 @@
 				B581DCC824E319BB00CDC0FF /* Info.plist */,
 				B581DCCE24E31F2A00CDC0FF /* QuestionViewController.swift */,
 				B581DCD024E31F4000CDC0FF /* ResultsViewController.swift */,
+				B581DCD224E327D200CDC0FF /* Question.swift */,
+				B581DCD424E3297600CDC0FF /* Answer.swift */,
 			);
 			path = PersonalityQuiz;
 			sourceTree = "<group>";
@@ -147,6 +153,8 @@
 				B581DCBF24E319BA00CDC0FF /* IntroductionViewController.swift in Sources */,
 				B581DCBB24E319BA00CDC0FF /* AppDelegate.swift in Sources */,
 				B581DCCF24E31F2A00CDC0FF /* QuestionViewController.swift in Sources */,
+				B581DCD524E3297600CDC0FF /* Answer.swift in Sources */,
+				B581DCD324E327D200CDC0FF /* Question.swift in Sources */,
 				B581DCD124E31F4000CDC0FF /* ResultsViewController.swift in Sources */,
 				B581DCBD24E319BA00CDC0FF /* SceneDelegate.swift in Sources */,
 			);
