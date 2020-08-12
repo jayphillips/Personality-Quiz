@@ -151,6 +151,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rlr-Gl-x0y">
                                         <rect key="frame" x="0.0" y="90.5" width="374" height="30"/>
                                         <state key="normal" title="Submit Answer"/>
+                                        <connections>
+                                            <action selector="rangedAnswerButtonPressed" destination="KX0-td-W6g" eventType="touchUpInside" id="xfe-cd-jMg"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -216,6 +219,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ryF-wD-P2p">
                                         <rect key="frame" x="0.0" y="204" width="374" height="30"/>
                                         <state key="normal" title="Submit Answer"/>
+                                        <connections>
+                                            <action selector="multpleAnswerButtonPressd" destination="KX0-td-W6g" eventType="touchUpInside" id="O0t-ad-kIb"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -255,6 +261,7 @@
                         <outlet property="questionProgressView" destination="jsT-zT-csa" id="jXw-9L-LCX"/>
                         <outlet property="rangedLabel1" destination="fVj-02-7rS" id="FV0-hz-tId"/>
                         <outlet property="rangedLabel2" destination="X79-pe-IPj" id="1n4-qX-lAa"/>
+                        <outlet property="rangedSlider" destination="c9F-Nl-cNJ" id="0zz-r6-EWs"/>
                         <outlet property="rangedStackView" destination="evQ-kk-564" id="dyf-12-f7g"/>
                         <outlet property="singleButton1" destination="4Ea-gb-HtZ" id="Tt4-DG-Tqh"/>
                         <outlet property="singleButton2" destination="Y4r-uU-SVB" id="KXs-fX-OaW"/>
@@ -303,10 +310,19 @@
                         <viewLayoutGuide key="safeArea" id="geU-4i-ZOX"/>
                     </view>
                     <navigationItem key="navigationItem" title="Results" id="gud-4N-bHU">
-                        <barButtonItem key="rightBarButtonItem" title="Done" id="xoL-2H-0tE"/>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="xoL-2H-0tE">
+                            <connections>
+                                <segue destination="hQL-FY-uQg" kind="unwind" unwindAction="unwindToQuizIntroductionWithSegue:" id="5s2-B3-bnu"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="resultAnswerLabel" destination="D3j-gO-jmE" id="HAU-uB-bbg"/>
+                        <outlet property="resultDefinitionLabel" destination="gDd-Wc-nQb" id="V3A-Bk-XfP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h9c-e8-ems" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="hQL-FY-uQg" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2505.7971014492755" y="134.59821428571428"/>
         </scene>

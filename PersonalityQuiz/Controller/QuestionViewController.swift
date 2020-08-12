@@ -60,7 +60,7 @@ class QuestionViewController: UIViewController {
     ]
     
     var answersChosen: [Answer] = []
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
@@ -170,6 +170,13 @@ class QuestionViewController: UIViewController {
             updateUI()
         } else {
             performSegue(withIdentifier: "ResultsSegue", sender: nil)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ResultsSegue" {
+            let resultsViewController = segue.destination as! ResultsViewController
+            resultsViewController.responses = answersChosen
         }
     }
 
